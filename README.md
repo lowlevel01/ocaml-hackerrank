@@ -1,2 +1,2 @@
 # ocaml-hackerrank
-Solutions to OCaml problems on Hackerrank
+Solutions to Functional Programming problems on Hackerrank with OCaml
