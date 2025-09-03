@@ -7,3 +7,4 @@
 ==> λx.(x x) λx.(x x) SAME EXPRESSION
 ==> CAN'T REDUCE
 ````
+This one is called Omega combinator
