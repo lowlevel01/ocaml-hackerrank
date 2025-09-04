@@ -1,0 +1,6 @@
+
+### Replace argument by value
+
+````
+ (λx.x+1)((λy.y+2)3) = (λx.x+1)5 = 6
+````
