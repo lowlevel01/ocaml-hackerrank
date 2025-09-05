@@ -1,11 +1,14 @@
-
-
-let rec mingle p q=
-    match (p, q) with
-    | "","" -> ""
-    | _ -> String.make 1 p.[0] ^ String.make 1 q.[0] ^
-            mingle (String.sub p 1 (String.length p - 1))
-             (String.sub q 1 (String.length q - 1))
+let mingle p q =
+    let n = String.length p in
+    let buf = Buffer.create (2*n) in
+    let rec zigzag i = 
+        match i with
+        | i when i>=n -> Buffer.contents buf 
+        | _ -> Buffer.add_char buf p.[i];
+                Buffer.add_char buf q.[i];
+                zigzag (i+1)
+    in
+    zigzag 0
 
 let () = 
     let p = read_line() in
